@@ -3,26 +3,104 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href = "style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Pixelify+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-    Charlie Roberts
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <center><h1>Information about Noah</h1></center>
+  <div class="container">
+    
+    <div class="info-box">
+      <p>
+        Noah Gaskill - Class of 2028
+      </p>
+      <p>
+        Computer Science major, aiming to do BS/MS
+      </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      <h2>Experience</h2>
+      <h3>Classes taken:</h3>
+      <ul>
+        <li>Intro. to AI</li>
+        <li>Database Systems I</li>
+        <li>Software Engineering</li>
+        <li>Foundations of CompSci</li>
+        <li>Algorithms</li>
+        <li>Operating Systems</li>
+        <li>Social Imps. of Information Processing</li>
+        <li>Object-Oriented Design Concepts</li>
+        <li>Intro. to Machine Org. and Assembly</li>
+        <li>Systems Programming Concepts</li>
+        <li>Intro. to Program Design</li>
+      </ul>
+
+      <h3>Technologies:</h3>
+      <ul>
+        <li>HTML: a lot, for class and in personal projects</li>
+        <li>CSSL: a lot, for class and personal projects</li>
+        <li>Javascript: some in class</li>
+        <li>Typescript: none</li>
+      </ul>
+    </div>
+    <div class = "project-box">
+      <h3>Relevant Projects</h3>
+      <table>
+        <tr>
+          <th>Project Name</th>
+          <th>Description </th>
+          <th>Tech</th>
+        </tr>
+        <tr>
+          <td><a href="https://vanillacedar.neocities.org/">Hadopelagic</a></td>
+          <td>A personal website inspired by the early internet</td>
+          <td><ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td><a href="https://emulation-decompiled.neocities.org/">Emulation Decompiled</a> </td>
+          <td>a website made for a project in CS3043 in defense of video game emulation</td>
+          <td><ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td>PLA-app</td>
+          <td>My team's CS3733 project, a website for PLA application and recruitment</td>
+          <td><ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Flask w/ jinja2 templates</li>
+         </ul></td>
+        </tr>
+      </table> 
+    </div>
+  </div>
+  <div class = "welcome">  
+    <div class = "welc-box">  
+      <p class = "welc-text">Welcome to my site! Welcome to my site!</p>
+    </div>
+  </div>
+  <script>
+    const welc_text = document.querySelector('.welc-text');
+    let percentx = 0;
+    const speed = 0.3;
+    function scrollText(){
+      percentx -= speed
+      if (percentx <= -50){
+        percentx = 0
+      }
+      welc_text.style.transform =  `translateX(${percentx}%)`;
+      requestAnimationFrame(scrollText);
+    }
+    scrollText();
+    
+  </script>
   </body>
 </html>
+

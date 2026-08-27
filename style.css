@@ -1,0 +1,54 @@
+.info-box{
+    width: 45%;
+}
+.project-box{
+    width:45%;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    & div{
+        border: #4D9672 5px outset;
+        padding:0.5dvh 1dvw;
+        margin: 0.5em;
+        word-wrap:break-word;
+        overflow: hidden;
+        background-color: #1F6341;
+    }
+}
+h1{
+    justify-self: center;
+    color:#E0FCEE;
+}
+body{
+    font-family: "Pixelify Sans", sans-serif;
+    background-color:#06331C;
+    color:#DAE2D5;
+}
+a{
+    color:#8FC9AC;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welc-box{
+    background-color: aqua;
+    border: 3px rgb(0, 155, 150) inset;
+    width: 88px;
+    height:31px;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow:hidden;
+    padding: 2px 3px;
+}
+.welc-text{
+    color:#265150;
+    font-size: 17px;
+    margin:auto;
+    white-space: nowrap;
+    display: inline-block;    
+}
